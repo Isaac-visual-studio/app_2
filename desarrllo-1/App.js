@@ -56,10 +56,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* El StatusBar controla la barra de estado del dispositivo */}
       <StatusBar style="auto" />
 
-      {/* Llamamos al modal para eliminar el producto y le pasamos por props toda la data que necesita */}
       <RemoveModal
         modalVisible={modalVisible}
         cartItems={cartItems}
