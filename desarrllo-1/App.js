@@ -29,7 +29,6 @@ const DATA = [
 ];
 
 export default function App() {
-  // useState y useEffect hooks para controlar el estado de la aplicación y el ciclo de vida de un componente
   const [counter, setCounter] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [cartItems, setCartItems] = useState([]);
@@ -46,7 +45,6 @@ export default function App() {
     console.log(id);
   };
 
-  //console.log('Hubo un error en el servidor (no es mi culpa)');
 
   const addItem = () => {
     const newItem = {
@@ -71,7 +69,6 @@ export default function App() {
       />
       <View style={styles.header}>
         <Text>CARRITO</Text>
-        {/* <Image style={{width: 50, height: 50}} source={{uri: "https://t3.ftcdn.net/jpg/05/60/17/66/360_F_560176615_cUua21qgzxDiLiiyiVGYjUnLSGnVLIi6.jpg"}}/> */}
 
         <Image style={styles.image} source={cartLogo} />
       </View>
@@ -87,11 +84,6 @@ export default function App() {
         </Pressable>
       </View>
       <View style={styles.productList}>
-        {/* {DATA.map((item) => (
-          <View key={item.id}>
-            <Text style={styles.product}>{item.name}</Text>
-          </View>
-        ))} */}
 
         <FlatList
           data={cartItems}
